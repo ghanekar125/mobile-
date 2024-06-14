@@ -1,0 +1,888 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>mobile website</title>
+	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	
+	<style>
+		*{margin: 0;
+		  padding: 0;
+			box-sizing: border-box;
+		}
+		body {
+			background-color: white;
+		}
+		
+		.container{
+			background: linear-gradient(#00d4ff, #86eaff, #b7edf9);
+			height: auto;		
+			
+		}
+		.navbar1{
+			background-color:#FFFE6B;
+			height: 70px;
+		}
+		
+		ul {
+ 		 list-style-type: none;
+ 	 	 margin: 0;
+		 padding: 0;
+ 		 overflow: hidden;
+ 		 background-color: transparent;
+			}
+
+		li {
+		  float: right;
+		}
+
+		li a {
+ 		display: block;
+ 		color: black;
+ 		text-align: center;
+ 		padding: 16px;
+ 		text-decoration: none;
+		}
+
+		li a:hover {
+		background-color:transparent;
+			color: #8E8E8E;
+		}
+		h1{
+			float: left;
+		}
+		.marquee{
+			font-size: 18px;
+			color:#E80000;
+			background: #FFFBE6 ;
+						
+		}
+		.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+			position: absolute;
+			width: 100%				
+		}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px  ;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:white;
+	color: red;
+	font-size: bold;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+		
+		.dropdown2  {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown2 .dropbtn2 {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+ .dropdown2:hover .dropbtn2 {
+  background-color:white;
+	color: red;
+	font-size: bold;
+}
+		
+		.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color:  #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content2 a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content2 a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown2:hover .dropdown-content2 {
+  display: block;
+}
+				
+		.dropdown3 {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown3 .dropbtn3 {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+ .dropdown3:hover .dropbtn3 {
+  background-color:white;
+	color: red;
+	font-size: bold;
+}
+		
+		.dropdown-content3 {
+  display: none;
+  position: absolute;
+  background-color:  #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content3 a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content3 a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown3:hover .dropdown-content3 {
+  display: block;
+}
+	/* Slideshow container */
+.slideshow-container {
+  width: 1300px;
+	height:800px;
+  position: relative;
+  margin: auto;
+	margin-top: 40px;
+	
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+	div.scroll-container {
+  background-color: transparent;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+		position: absolute;	
+		margin-top: 900px;
+		height:350px;
+		width: 1350px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+		h2{
+			 font-family: Arial, sans-serif;
+			margin-left: 30px;
+			font-size: 30px;
+		}
+	
+		.top{			
+			background: #FFDE03;
+			font-family: Arial, "sans-serif";
+			font-size: 30px;
+			margin-top:2px;
+			position: absolute;
+			text-align: center;
+			width: 1350px;	
+			}
+		.top a{
+			text-decoration: none;
+			color: black;
+			text-align: center;
+		}
+		table{
+			margin-top: 1253px;
+			color: black;
+			background-color: transparent;
+			border: 0px;
+			margin-left: 280px;			
+		}
+		
+		footer{
+  position: absolute;
+  background:#00c5f0;
+  width: 1350px;
+ top: 2910px;
+  left: 0;
+	
+}
+footer::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100px;
+  height: 1px;
+  width: 1000px;
+  background: #AFAFB6;
+}
+footer .content3{
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+}
+footer .content3 .top1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.content3 .top1 .logo-details{
+  color: #000;
+  font-size: 30px;
+	font-size:30px;
+}
+.content3 .top1 .media-icons{
+  display: flex;
+}
+.content3 .top1 .media-icons a{
+  height: 40px;
+  width: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #000;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.top1 .media-icons a:nth-child(1){
+  background: #4267B2;
+}
+.top1 .media-icons a:nth-child(1):hover{
+  color: #4267B2;
+  background: #000;
+}
+.top1 .media-icons a:nth-child(2){
+  background: #1DA1F2;
+}
+.top1 .media-icons a:nth-child(2):hover{
+  color: #1DA1F2;
+  background: #000;
+}
+.top1 .media-icons a:nth-child(3){
+  background: #E1306C;
+}
+.top1 .media-icons a:nth-child(3):hover{
+  color: #E1306C;
+  background: #000;
+}
+.top1 .media-icons a:nth-child(4){
+  background: #0077B5;
+}
+.top1 .media-icons a:nth-child(4):hover{
+  color: #0077B5;
+  background: #000;
+}
+.top1 .media-icons a:nth-child(5){
+  background: #FF0000;
+}
+.top1 .media-icons a:nth-child(5):hover{
+  color: #FF0000;
+  background: #000;
+}
+footer .content3 .link-boxes{
+  width: 1250px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .content3 .link-boxes .box{
+  width: calc(1000px / 5 - 10px);
+}
+.content3 .link-boxes .box .link_name{
+  color: #000;
+  font-size: 18px;
+  font-weight: 400px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.link-boxes .box .link_name::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 35px;
+  background: #000;
+}
+.content3 .link-boxes .box li{
+  margin: 6px 0;
+  list-style: none;
+}
+.content3 .link-boxes .box li a{
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.4s ease
+}
+.content3 .link-boxes .box li a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.content3 .link-boxes .input-box{
+  margin-right: 55px;
+}
+.link-boxes .input-box input{
+  height: 40px;
+  width: calc(125px + 65px);
+  outline: none;
+  border: 2px solid #AFAFB6;
+  background: #00a5cf;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #000;
+  margin-top: 5px;
+}
+.link-boxes .input-box input::placeholder{
+  color: #000;
+  font-size: 16px;
+}
+.link-boxes .input-box input[type="button"]{
+  background: #000;
+  color: #017098;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.input-box input[type="button"]:hover{
+  opacity: 1;
+}
+footer .bottom-details{
+  width: 1350px;
+  background: #01658d;
+}
+footer .bottom-details .bottom_text{
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a{
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.bottom-details .bottom_text a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.bottom-details .bottom_text a{
+  margin-right: 10px;
+}
+@media (max-width: 900px) {
+  footer .content3 .link-boxes{
+    flex-wrap: wrap;
+  }
+  footer .content3 .link-boxes .input-box{
+    width: 40%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 700px){
+  footer{
+    position: relative;
+  }
+  .content3 .top1 .logo-details{
+    font-size: 26px;
+  }
+  .content3 .top1 .media-icons a{
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    line-height: 35px;
+  }
+  footer .content3 .link-boxes .box{
+    width: calc(100% / 3 - 10px);
+  }
+  footer .content3 .link-boxes .input-box{
+    width: 60%;
+  }
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a{
+    font-size: 12px;
+  }
+}
+@media (max-width: 520px){
+  footer::before{
+    top: 145px;
+  }
+  footer .content3 .top1{
+    flex-direction: column;
+  }
+  .content3 .top1 .media-icons{
+    margin-top: 16px;
+  }
+  footer .content3 .link-boxes .box{
+    width: calc(1250px / 2 - 10px);
+  }
+  footer .content3 .link-boxes .input-box{
+    width: 1250px;
+  }
+}
+	
+		
+			
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="navbar1">
+			<h1><img src="../css-cw/phnepeak logo.1.png" width="150" height="70"></h1>	
+			<ul>						
+				<li><a href="">LOGIN/SIGN IN</a></li>
+				<li><a href=""><img src="../css-cw/magnifier_64673.png" height="15"><input type="text" placeholder="search"></a></li>				
+			</ul>
+		</div>
+		<div class="navbar">
+			<a></a>
+  <a href="#home">All</a>
+			
+  <a href="#news">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Price's
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">1000-5000</a>
+      <a href="#">5000-10000</a>
+      <a href="#">10000-20000</a>
+		 <a href="#">Over-20000</a>
+    </div>	 
+  </div>
+			 <a href="#new">New Launch</a>
+			 <div class="dropdown2">
+    <button class="dropbtn2">Discounts
+      <i class="fa fa-caret-down2"></i>
+    </button>
+    <div class="dropdown-content2">
+      <a href="#2">10% off or more</a>
+      <a href="#2">25% off or more</a>
+      <a href="#2">35% off or more</a>
+	  <a href="#2">50% off or more</a>
+	  <a href="#2">75% off or more</a>		
+    </div>	 
+  </div>
+			 <div class="dropdown3">
+    <button class="dropbtn3">new arivals
+      <i class="fa fa-caret-down3"></i>
+    </button>
+    <div class="dropdown-content3">
+      <a href="#3">Last 30 days</a>
+      <a href="#3">Last 90 days</a>   	
+    </div>	 
+  </div>
+		 <a href="#today">Todays Deals</a>	
+			 <a href="#best">Best Seller</a>
+			
+		 <div class="dropdown3">
+    <button class="dropbtn3">Mobile Accessories
+      <i class="fa fa-caret-down3"></i>
+    </button>
+    <div class="dropdown-content3">
+     	<a href="#4">Phone Cases</a>
+		<a href="#4">Screen Protectors</a>
+     	<a href="#4">Chargers and external batteries</a>   
+		<a href="#4">Selfie Stick</a>		
+		<a href="#4">Portable Power Banks</a>
+		<a href="#4">Headphones</a>	
+    </div>	 
+  </div>	
+			
+			 <div class="dropdown3">
+    <button class="dropbtn3">Mobile Brand
+      <i class="fa fa-caret-down3"></i>
+    </button>
+    <div class="dropdown-content3">
+      <a href="#3">Mi</a>
+      <a href="#3">OnePlus</a>
+		<a href="#3">Samsung</a>
+		<a href="#3">Apple</a>
+		<a href="#3">Nokia</a>
+		<a href="#3">Vivo</a>
+		<a href="#3">Poco</a>
+		<a href="#3">Lenovo</a>
+		<a href="#3">LG</a>
+		<a href="#3">Micromax</a>
+		<a href="#3">Honor</a>
+		
+    </div>	 
+  </div>
+				
+		<a href="#customer">Coustomer Service</a>
+			
+			<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 9</div>
+    <img src="1+ 11.png" style="width:100%">   
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 9</div>
+    <img src="1+ nord.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 9</div>
+    <img src="nazro.png" style="width:100%">
+  </div>
+	
+	<div class="mySlides fade">
+    <div class="numbertext">4 / 9</div>
+    <img src="realme.png" style="width:100%">
+  </div>
+
+	<div class="mySlides fade">
+    <div class="numbertext">5 / 9</div>
+    <img src="redmi.png" style="width:100%">
+  </div>
+	
+	<div class="mySlides fade">
+    <div class="numbertext">6 / 9</div>
+    <img src="samsaung priumir leag.png" style="width:100%">
+  </div>
+	
+	<div class="mySlides fade">
+    <div class="numbertext">7 / 9</div>
+    <img src="samsung.png" style="width:100%">
+  </div>
+	
+	<div class="mySlides fade">
+    <div class="numbertext">8 / 9</div>
+    <img src="snapdragon.png" style="width:100%">
+  </div>
+	
+	<div class="mySlides fade">
+    <div class="numbertext">9 / 9</div>
+    <img src="vivo.png" style="width:100%">
+  </div>
+	
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(4)"></span>
+	<span class="dot" onclick="currentSlide(5)"></span>
+	<span class="dot" onclick="currentSlide(6)"></span>
+	<span class="dot" onclick="currentSlide(7)"></span>
+	<span class="dot" onclick="currentSlide(8)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+</div>
+			<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>			
+	</div>
+		<!--scroll coupen-->
+		<div class="scroll-container">			
+			<h2>Latest launches in Mobile & Accessories</h2>			
+  			<a href=""><img src="m1.jpeg" alt="m1" width="200" heith="100"></a>	
+  			<a href=""><img src="m2.jpeg" alt="m2" width="200" heith="100"></a>
+			<a href=""><img src="m3.jpeg" alt="m3" width="200" heith="100"></a>
+			<a href=""><img src="m4.jpeg" alt="m4" width="200" heith="100"></a>
+			<a href=""><img src="m5.jpeg" alt="m5" width="200" heith="100"></a>
+			<a href=""><img src="m6.jpeg" alt="m6" width="200" heith="100"></a>
+			<a href=""><img src="m7.jpeg" alt="m7" width="200" heith="100"></a>
+			<a href=""><img src="m8.jpeg" alt="m8" width="200" heith="100"></a>
+			<a href=""><img src="m9.jpeg" alt="m9" width="200" heith="100"></a>
+</div>
+		<table border="0"  align="center" cellpadding="10" cellspacing="30">
+			<th><a href=""><img src="o1.png"></a> </th>
+			<th><a href=""><img src="o2.png"></a> </th>
+			<th><a href=""><img src="o3.png"></a> </th>
+			<tr>
+			<th><a href=""><img src="o4.png"></a> </th>		
+			<th><a href=""><img src="o5.png"></a> </th>
+			<th><a href=""><img src="o6.png"></a> </th></tr>
+			<tr>
+			<th><a href=""><img src="o7.png"></a> </th>
+			<th><a href=""><img src="o8.png"></a> </th>
+			<th><a href=""><img src="m9.jpeg"></a> </th>
+			</tr>
+		</table>
+		
+		<div class="top"> 
+		<a href="#top" >
+			Back to Top 
+			</a>
+		</div>
+		
+		<footer>
+		
+		<div class="content3">
+      <div class="top1">
+        <div class="logo-details">
+          <i class="fab fa-slack"></i>
+          <span class="logo_name">PHONE PEAK</span>
+        </div>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">Get to Know Us</li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Press Release</a></li>
+          <li><a href="#">Reviews</a></li>         
+        </ul> 
+		  
+		   <ul class="box">
+          <li class="link_name">Contact Us</li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instaagarm</a></li>
+        </ul>
+       		  
+        <ul class="box">
+          <li class="link_name">Let Us Help You</li>
+          <li><a href="#">COVID-19 & Phone Paek</a></li>
+          <li><a href="#">Your Account</a></li>
+          <li><a href="#">Returns Center</a></li>
+          <li><a href="#">100% Purchase Protection</a></li>
+		  <li><a href="#">Phone Peak App Download</a></li>
+		  <li><a href="#">Help</a></li>
+        </ul>
+		         
+        <ul class="box input-box">
+          <li class="link_name">Login/Sign in</li>
+          <li><input type="text" placeholder="Enter your number"></li>
+		  <li><input type="text" placeholder="Enter your OTP"></li>
+          <li><input type="button" value="Submit"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2021 <a href="#">CodingLab.</a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+		
+		</footer>
+		
+	</div>
+
+		</body>
+</html>
